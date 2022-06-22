@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bratela</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="up">
+                <img class="photo" src="img/image.jpeg">
+            </div>
+            <p>
+                <a class="youtube" href="https://www.youtube.com/c/Bratela2528"><i class="fab fa-youtube"></i></a>
+                <a class="openVk" href="https://openvk.su/dungeonmaster"><img style="width: 35px; height: 35px;" src="img/openvk.svg"></a>
+                <a class="github" href="https://github.com/BratelaDev"><i class="fab fa-github"></i></a>
+                <a class="twitter" href="https://twitter.com/Bratela_ru"><i class="fab fa-twitter"></i></a>
+				<a class="telegram" href=""><i class="fab fa-telegram"></i></a>
+            </p>
+            <div class="name">Bratela</div>
+            <div class="age">Лет <span id="age">18</span></div>
+            <div class="desc">3D/2D художник,программист,аниматор</div>
+        </div>
+    </div>
+</body>
+    <script>
+        var today = new Date();
+        var bday = new Date('18 January 2004');
+        var years = today - bday;
+        document.getElementById("age").innerHTML = new Date(years).getFullYear() - 1970;
+    </script>
+</html>
